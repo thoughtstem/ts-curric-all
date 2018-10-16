@@ -5,5 +5,7 @@
 (define deps '(
   "https://github.com/thoughtstem/ts-curric-wetware.git"
   "https://github.com/thoughtstem/ts-curric-3rd-5th-del-mar.git"
+  "https://github.com/thoughtstem/ts-curric-k2-scratch.git"
+  "https://github.com/thoughtstem/ts-curric-k2-ozobots.git"
   "https://github.com/thoughtstem/ts-curric-3rd-5th-san-diego.git"
 )) 

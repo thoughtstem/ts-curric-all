@@ -9,22 +9,34 @@ This repo lists as dependencies any curriculum we are currently intersted in.
 Installing this repo as a racket package should pull in all current curriculum.
 That, in turn, should pull in all langs and libraries that the curricula pertain to.
 
+The intention is that installing @racket[ts-curric-all] will install everything
+needed on a device that students are using.
+
+The other intention is that it gives teachers and admins an easy way to access
+the curriculum materials they need: i.e. for editing, printing, review, making
+new curriculum based on existing curriculum, etc.
+
+These docs will serve as generalized documentation on our curriculum organizational
+structure as a
+whole.  Docs specific to any particular curriculum should go in those particular repos.
+
 @section{Printing}
 
 Printing of quest cards is a common task.  Here's a reasonably fast way to get printable
-sheets...
+sheets for the first quest, with enough duplicates for everyone enrolled in course 1225.
+This will propt you to choose a folder to save the images into.  Then you can use
+whatever program your OS gives you for layout/printing/etc.
 
-@racketblock[
+@codeblock|{
   #lang racket
-
-  (require ts-curric-game-engine)
+  
   (require ts-racket)
-  (require (only-in pict scale pict->bitmap))
+  (require ts-curric-common)
+  (set-env! PROD)
 
-  (define (shrink i)
-    (scale i 0.25))
+  (require ts-curric-k2-del-mar)
 
-  (cards->pages (map (compose pict->bitmap shrink)
-                     (first (quests))))
-]
+  (save-out-materials "test"
+    (printable-quest 1 (course 1225)))
+}|
 
