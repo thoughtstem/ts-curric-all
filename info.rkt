@@ -8,5 +8,6 @@
   "https://github.com/thoughtstem/ts-curric-k2-scratch.git"
   "https://github.com/thoughtstem/ts-curric-k2-ozobots.git"
   "https://github.com/thoughtstem/ts-curric-3rd-5th-san-diego.git"
+  "https://github.com/thoughtstem/ts-curric-game-engine.git"
   "https://github.com/thoughtstem/html5-lang.git?path=html5-lang"
 ))
