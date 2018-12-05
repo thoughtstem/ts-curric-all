@@ -3,6 +3,7 @@
 (define scribblings '(("docs/ts-curric-all.scrbl" ())))
 
 (define deps '(
+  "ts-game-jam-1"
   "https://github.com/thoughtstem/ts-curric-wetware.git"
   "https://github.com/thoughtstem/ts-curric-3rd-5th-del-mar.git"
   "https://github.com/thoughtstem/ts-curric-k2-scratch.git"
